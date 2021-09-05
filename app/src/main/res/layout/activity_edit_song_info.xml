@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSongInfoActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtView_edit_info"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtViewEditInfoTitle"/>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewEditInfoTitle">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="10dp">
+
+
+                                <TextView
+                                    android:id="@+id/txtViewTitleEditInfo"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20sp"
+                                    android:text="@string/titleEditInfo"
+                                    android:layout_marginEnd="10dp"/>
+                                <EditText
+                                    android:inputType="text"
+                                    android:hint="@string/hint_title"
+                                    android:maxLength="80"
+                                    android:id="@+id/editTxtTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:importantForAutofill="no" />
+
+                                <TextView
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20sp"
+                                    android:text="@string/artistEditInfo"
+                                    android:layout_marginEnd="10dp"/>
+                                <EditText
+                                    android:inputType="text"
+                                    android:maxLength="80"
+                                    android:hint="@string/hint_artist"
+                                    android:id="@+id/editTxtArtist"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:importantForAutofill="no"
+                                    />
+
+                                <TextView
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20sp"
+                                    android:text="@string/albumEditInfo"
+                                    android:layout_marginEnd="10dp"/>
+                                <EditText
+                                    android:inputType="text"
+                                    android:maxLength="80"
+                                    android:hint="@string/hint_album"
+                                    android:id="@+id/editTxtAlbum"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:importantForAutofill="no"/>
+
+                                <TextView
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20sp"
+                                    android:text="@string/yearEditInfo"
+                                    android:layout_marginEnd="10dp"/>
+                                <EditText
+                                    android:hint="@string/hint_year"
+                                    android:maxLength="7"
+                                    android:inputType="number"
+                                    android:id="@+id/editTxtYear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:importantForAutofill="no" />
+
+                                <Button
+                                    android:id="@+id/btnSaveEditInfo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/custom_button"
+                                    android:text="@string/save"
+                                    android:textColor="#08D323"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                </ScrollView>
+
+</RelativeLayout>

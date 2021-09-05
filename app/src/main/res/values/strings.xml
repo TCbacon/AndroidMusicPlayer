@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Custom Melody</string>
+
+    <!-- Edit song info -->
+    <string name="txtView_edit_info">Edit Info</string>
+    <string name="titleEditInfo">Title</string>
+    <string name="artistEditInfo">Artist</string>
+    <string name="albumEditInfo">Album</string>
+    <string name="yearEditInfo">Year</string>
+    <string name="hint_title">title</string>
+    <string name="hint_artist">artist</string>
+    <string name="hint_album">album</string>
+    <string name="hint_year">year</string>
+    <string name="save">Save</string>
+
+
+    <!-- Check box settings-->
+    <string name="auto_play_on">AUTO PLAY ON</string>
+
+
+    <!-- Cardview Music Setlist -->
+    <string name="select">Select</string>
+    <string name="song_title">Song Title</string>
+    <string name="options">Options</string>
+    <string name="song_artist">Song Artist</string>
+    <string name="song_album">Song Album</string>
+    <string name="song_year">Song Year</string>
+
+
+    <!--Music Setlist -->
+    <string name="gear">gear</string>
+    <string name="add_song">Add Song</string>
+    <string name="music_list_is_empty">Music List is Empty</string>
+    <string name="imgview_setlist">imgview_setlist</string>
+    <string name="img_view_content_desc_dropdown_arrow">img view content desc dropdown arrow</string>
+
+    <!-- Custom dialog buttons -->
+    <string name="dialog_back">Back</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_edit_info">Edit Info</string>
+
+
+    <!-- Gear Settings -->
+    <string name="settings">Settings</string>
+    <string name="app_permissions">App Permissions</string>
+    <string name="btn_permissions">Permissions</string>
+    <string name="auto_play">Auto Play</string>
+    <string name="audio_bars_animation">Audio Bars Animation</string>
+    <string name="privacy">Privacy</string>
+    <string name="btn_terms">Terms</string>
+    <string name="btn_privacy_policy">Privacy Policy</string>
+    <string name="txtView_auto_pause">Auto Pause</string>
+    <string name="txtView_assistance">Assistance</string>
+    <string name="btn_help">Help</string>
+
+
+    <!-- Song Activity -->
+    <string name="img_view_album_cover">album cover</string>
+    <string name="song_duation">00:00:00</string>
+    <string name="btn_prev">Prev</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_change_img">Change Img</string>
+    <string name="imgbtn_play">play</string>
+    <string name="btn_rotate">Rotate</string>
+
+    <!-- Help Activity-->
+    <string name="txtView_change_app_permissions">Change app permissions?</string>
+    <string name="txtView_change_app_perm">In settings, you can click on Permissions button and manually grant or restrict what the app can access.</string>
+    <string name="txtView_warning_turning_off">WARNING: turning off certain permissions may result in errors when playing music.</string>
+    <string name="txtView_how_to_edit">How to edit or delete song?</string>
+    <string name="txtView_edit_ans">To edit or delete song, press on the Options button on the current song then press Edit Info or Delete button. Modifying or deleting songs in app does NOT effect the songs stored in phone\'s files.</string>
+    <string name="txtView_unavailable_quest">Unavailable song info?</string>
+    <string name="txtView_unavail_ans">If there is no info provided for the selected song then info will show Unavailable and year will be 0 if no year is found.</string>
+    <string name="txtView_missing_img_ques">Song has missing image?</string>
+    <string name="txtView_missing_img_ans">If the album cover shows missing image, then the app could not retrieve the album cover due to error or the song does not contain an album image.</string>
+    <string name="txtView_change_album_cover_ques">Change album cover?</string>
+    <string name="txtView_change_album_ans">You can change the album cover by pressing SELECT button on the current song and then press on CHANGE IMG button.</string>
+    <string name="txtView_checkbox_options_ques">Checkbox options?</string>
+    <string name="txtView_chkbox_ans">• Auto Play - next song will automatically play after current song is finished. \n• Audio Bars Animation - Shows audio bar animation at bottom of the screen \n• Auto Pause - Automatically pause a song if user leaves app or rotates device.</string>
+    <string name="txtView_song_does_not_play_ques">Song does not play?</string>
+    <string name="txtView_not_play_ans">If a song was deleted from the phone\'s files, then the app will not be able to play that song.</string>
+    <string name="txtView_change_rotation_ques">Change custom image rotation?</string>
+    <string name="txtView_change_rot_ans">You can change the rotation of the custom image by pressing the ROTATE button.</string>
+
+
+
+</resources>

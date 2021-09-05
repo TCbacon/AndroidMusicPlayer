@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardviewSongSetlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="12dp"
+    app:cardBackgroundColor="#4965C5">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSongSetlistTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/txtViewSongTitleSetlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/song_title"
+                    android:textColor="#F8F4F4"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    />
+
+
+
+            <ImageView
+                android:id="@+id/imgViewSetlistSong"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/txtViewSongTitleSetlist"
+                android:src="@drawable/ic_launcher_background"
+                android:contentDescription="@string/imgview_setlist"/>
+
+            <Button
+                android:id="@+id/btnSetlistToSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewSongTitleSetlist"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/imgViewSetlistSong"
+                android:background="@drawable/custom_button"
+                android:text="@string/select"
+                android:textColor="#00BF26" />
+
+            <Button
+                android:id="@+id/btnSetlistEditSongInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewSongTitleSetlist"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/btnSetlistToSong"
+                android:background="@drawable/custom_button"
+                android:text="@string/options"
+                android:textColor="#C1710E" />
+
+            <ImageView
+                android:id="@+id/imgViewDownArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtViewSongTitleSetlist"
+                android:layout_toEndOf="@+id/btnSetlistEditSongInfo"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:contentDescription="@string/img_view_content_desc_dropdown_arrow"/>
+
+            <CheckBox
+                android:button="@drawable/custom_checkbox"
+                android:id="@+id/chkBoxFavoriteSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewSongTitleSetlist"
+                android:layout_toEndOf="@+id/imgViewDownArrow"
+                android:background="@android:color/transparent"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayoutMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutSongSetlistTitle"
+            android:background="#A7C3F6"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/txtViewSongTitleMoreInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song_title"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"/>
+
+            <TextView
+                android:layout_below="@+id/txtViewSongTitleMoreInfo"
+                android:id="@+id/txtViewSongArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song_artist"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"/>
+
+            <TextView
+                android:id="@+id/txtViewSongAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewSongArtist"
+                android:text="@string/song_album"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"/>
+
+            <TextView
+                android:id="@+id/txtViewSongYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtViewSongAlbum"
+                android:text="@string/song_year"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

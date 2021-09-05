@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_song_activity_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SongActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewSong"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_launcher_background"
+                android:contentDescription="@string/img_view_album_cover"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarLoadingImg"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtViewSongTitle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewSong"
+                android:layout_marginTop="10dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/song_title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBarSong"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtViewSongDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/song_duation"
+                android:textColor="#FFFFFF" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPrev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/prev_button"
+                    android:onClick="onClickBtnBackSong"
+                    android:text="@string/btn_prev" />
+
+                <ImageButton
+                    android:id="@+id/btnPlayPause"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#EFEFEF"
+                    android:src="@drawable/ic_play_song"
+                    android:contentDescription="@string/imgbtn_play"/>
+
+
+                <Button
+                    android:id="@+id/btnNextSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_next"
+                    android:background="@drawable/prev_button"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:onClick="onClickBtnBackSong"
+                    android:text="@string/btn_back"
+                    android:textColor="#E41A1A" />
+
+                <Button
+                    android:id="@+id/btnChangeImage"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/custom_button"
+                    android:onClick="openCustomImageFile"
+                    android:text="@string/btn_change_img"
+                    android:textColor="#0611E1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/custom_button"
+                    android:text="@string/btn_rotate"
+                    android:id="@+id/btnRotateImg"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtViewAutoPlayMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#EA5656"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/auto_play_on"
+                android:textColor="#F6F4F4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.gauravk.audiovisualizer.visualizer.BarVisualizer
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:avSpeed="0.5"
+            app:avColor="#08ee00"
+            android:id="@+id/barVisualizer"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
